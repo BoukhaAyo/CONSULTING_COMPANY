@@ -4,7 +4,6 @@
     --header-color: #49657d;
     --main-color: #1f87e3;
 }
-/*End global rools */
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -13,6 +12,8 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+/*End global rools */
 /* start header code */
 header{
     background-color: var(--header-color);
