@@ -1,0 +1,252 @@
+/* let's start */
+/*start global rools */
+:root{
+    --header-color: #49657d;
+    --main-color: #1f87e3;
+}
+/*End global rools */
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* start header code */
+header{
+    background-color: var(--header-color);
+}
+header .header_div{
+    align-items: center !important;
+    justify-content: flex-start ;
+}
+header .asom_div{
+    justify-content: flex-end ;
+}
+header .header_div,.asom_div{
+    display: flex;
+    align-items: baseline;
+    font-weight: bold;
+}
+header i,header p,header span{
+    font-size: 12px;
+    text-align: justify;
+    padding: 0 10px;
+    color: white;
+}
+header span{
+    color: rgb(143, 143, 143);
+}
+header p {
+    margin-top: 12px !important;
+}
+.our_company{
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    font-size: 14px;
+    padding: 15px 24px;
+    margin: 0 !important;
+}
+.our_company a{
+    text-decoration: none;
+    color: white;
+}
+.our_company a:hover{
+    color: white;
+}
+/* End header code */
+
+/* start nav code */
+nav{
+    filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.1));
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+nav img{
+    width: 100px;
+    height: 56px;
+}
+nav ul li a{
+    color: var(--header-color) !important;
+    padding-left: 32px !important ;
+}
+/* End nav code */
+
+/* start section */
+/* start first article */
+.slider h2, .slider p{
+    color: var(--header-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.slider h2{
+    font-size: 43px;
+}
+.slider p{
+    font-size: 14px;
+    line-height: 57px;
+}
+.slider span {
+    background-color: var(--main-color);
+    padding: 7px 19px; 
+    position: relative;
+}
+.slider span img {
+    width: 75px;
+}
+.slider span p{
+    position: absolute;
+    left: 6px;
+    top: -7px;
+    color: black;
+    font-weight: bold;
+    font-size: 9px;
+}
+.slider span i{
+    margin-left: 7px;
+}
+.carousel-caption{
+    top: 238px;
+}
+/* End first article */
+
+/* satrt article about us */
+.abouts{
+    margin-top: 100px;
+    position: relative;
+}
+.abouts img{
+    width: 100%;
+}
+.abouts .title{
+    padding: 94px 0px 0px 63px;
+}
+.abouts .title p{
+    color: var(--header-color);
+    text-align: start;
+    width: 492px;
+
+}
+.abouts .title p:first-child, .title span{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 27px;
+}
+.abouts .title span{
+    color: var(--main-color);
+}
+.abouts .title p:nth-child(2){
+    font-size: 12.5px;
+    margin-bottom: 43px;
+    line-height: 1.6;
+}
+
+/* End article about us */
+
+/* start article our service */
+.features{
+    text-align: center;
+    margin-top: 100px;
+    color: var(--header-color);
+}
+.ftitle h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+}
+.ftitle p {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.714;
+    width: 644px;
+}
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item_1{
+    background-color: #edeff2;
+}
+/* End article our service */
+
+/* End section */
+/*start  media query */
+@media only screen and (max-width: 1200px) {
+    .slider h2{
+        font-size: 34px;
+    }
+    .carousel-caption {
+        top: 175px ;
+    }
+    .abouts .title {
+        padding: 41px 0px 0px 63px;
+    }
+    .abouts .title p:first-child, .title span {
+        font-size: 20px;
+        width: 351px;
+    }
+}
+@media only screen and (max-width: 970px) {
+    .carousel-caption {
+        top: 98px;
+    }
+    .slider h2{
+        font-size: 26px;
+    }
+    .slider p{
+        font-size: 11px;
+    }
+    .slider .our_company{
+        font-size: 11px;
+    }
+    .header_div{
+        justify-content: center !important;
+    }
+    .asom_div{
+        justify-content: center !important;
+    }
+    .abouts img {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .abouts img {
+        width: 100%;
+    }
+    .slider span {
+        padding: 7px 0px;
+         margin-left: -15px;
+    }
+    .our_company{
+        padding: 12px;
+    }
+    header p {
+        width: 140px;
+    }
+    .abouts .title p{
+        width: auto;
+    }
+    .abouts .title p:first-child, .title span {
+        width: auto;
+    }
+    .slider h2 {
+        font-size: 22px;
+    }
+    .slider p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .carousel-caption {
+        top: 30px;
+    }
+}
+/*End media query */
